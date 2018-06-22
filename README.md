@@ -4,3 +4,5 @@
 
 所以使用drawroundrect来简单绘制
 
+感谢：
+[Android 自定义水平进度条的圆角进度](https://blog.csdn.net/lv_fq/article/details/51762209)
