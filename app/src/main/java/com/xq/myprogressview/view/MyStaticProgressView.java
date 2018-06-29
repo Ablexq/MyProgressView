@@ -96,7 +96,7 @@ public class MyStaticProgressView extends View {
         //设置渐变
         LinearGradient linearGradient = new LinearGradient(0, getHeight() / 2,//起点
                 currentProgress, getHeight() / 2,//终点
-                new int[]{Color.YELLOW, Color.BLUE, Color.RED},
+                new int[]{Color.GREEN, Color.BLUE, Color.RED},
                 null,
                 Shader.TileMode.CLAMP);
         progressPaint.setShader(linearGradient);

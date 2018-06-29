@@ -3,11 +3,13 @@
 
     <item
         android:id="@android:id/background"
-        android:drawable="@drawable/shape_progressbar_bg" />
+        android:drawable="@drawable/shape_progressbar_bg00" />
 
     <item android:id="@android:id/progress">
 
-        <clip android:drawable="@drawable/shape_progressbar_progress" />
+        <scale
+            android:drawable="@drawable/shape_progressbar_progress00"
+            android:scaleWidth="100%" />
 
     </item>
 

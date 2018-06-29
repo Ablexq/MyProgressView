@@ -16,6 +16,11 @@
         android:layout_height="20dp"
         android:layout_margin="10dp" />
 
+    <!-- progress
+    圆角决定起点 clip/scale决定终点
+    为clip 时 终点平头 ， 为scale 时 终点圆头   -->
+
+    <!--clip  左侧有圆角-->
     <ProgressBar
         android:id="@+id/myview3"
         style="@android:style/Widget.ProgressBar.Horizontal"
@@ -24,8 +29,9 @@
         android:layout_margin="10dp"
         android:max="100"
         android:progress="80"
-        android:progressDrawable="@drawable/layer_list_progress_drawable_1" />
+        android:progressDrawable="@drawable/layer_list_progress_drawable01" />
 
+    <!--scale  左侧有圆角-->
     <ProgressBar
         android:id="@+id/myview4"
         style="@android:style/Widget.ProgressBar.Horizontal"
@@ -34,7 +40,29 @@
         android:layout_margin="10dp"
         android:max="100"
         android:progress="80"
-        android:progressDrawable="@drawable/layer_list_progress_drawable" />
+        android:progressDrawable="@drawable/layer_list_progress_drawable00" />
+
+    <!--scale  左侧没圆角-->
+    <ProgressBar
+        android:id="@+id/myview5"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="80"
+        android:progressDrawable="@drawable/layer_list_progress_drawable10" />
+
+    <!--clip  左侧没圆角-->
+    <ProgressBar
+        android:id="@+id/myview6"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="80"
+        android:progressDrawable="@drawable/layer_list_progress_drawable11" />
 
 
 </LinearLayout>
