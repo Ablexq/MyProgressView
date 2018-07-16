@@ -1,68 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <com.xq.myprogressview.view.MyDynamicProgressView
-        android:id="@+id/myview1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <com.xq.myprogressview.view.MyStaticProgressView
-        android:id="@+id/myview2"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp" />
+        <com.xq.myprogressview.view.MyDynamicProgressView
+            android:id="@+id/myview1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp" />
 
-    <!-- progress
-    圆角决定起点 clip/scale决定终点
-    为clip 时 终点平头 ， 为scale 时 终点圆头   -->
+        <com.xq.myprogressview.view.MyStaticProgressView
+            android:id="@+id/myview2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp" />
 
-    <!--clip  左侧有圆角-->
-    <ProgressBar
-        android:id="@+id/myview3"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:max="100"
-        android:progress="80"
-        android:progressDrawable="@drawable/layer_list_progress_drawable01" />
+        <!-- mProgress
+        圆角决定起点 clip/scale决定终点
+        为clip 时 终点平头 ， 为scale 时 终点圆头   -->
 
-    <!--scale  左侧有圆角-->
-    <ProgressBar
-        android:id="@+id/myview4"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:max="100"
-        android:progress="80"
-        android:progressDrawable="@drawable/layer_list_progress_drawable00" />
+        <!-- ==============================左侧有圆角=================================== -->
+        <!--clip  左侧有圆角-->
+        <ProgressBar
+            android:id="@+id/myview3"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:max="100"
+            android:progress="1"
+            android:progressDrawable="@drawable/layer_list_progress_drawable01" />
 
-    <!--scale  左侧没圆角-->
-    <ProgressBar
-        android:id="@+id/myview5"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:max="100"
-        android:progress="80"
-        android:progressDrawable="@drawable/layer_list_progress_drawable10" />
+        <!--scale  左侧有圆角-->
+        <ProgressBar
+            android:id="@+id/myview4"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:max="100"
+            android:progress="1"
+            android:progressDrawable="@drawable/layer_list_progress_drawable00" />
 
-    <!--clip  左侧没圆角-->
-    <ProgressBar
-        android:id="@+id/myview6"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:max="100"
-        android:progress="80"
-        android:progressDrawable="@drawable/layer_list_progress_drawable11" />
+        <!-- =============================左侧没圆角================================ -->
+        <!--scale  左侧没圆角-->
+        <ProgressBar
+            android:id="@+id/myview5"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:max="100"
+            android:progress="1"
+            android:progressDrawable="@drawable/layer_list_progress_drawable10" />
 
+        <!--clip  左侧没圆角-->
+        <ProgressBar
+            android:id="@+id/myview6"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:max="100"
+            android:progress="1"
+            android:progressDrawable="@drawable/layer_list_progress_drawable11" />
 
-</LinearLayout>
+        <!-- =================================================================== -->
+        <ProgressBar
+            android:id="@+id/myview7"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#999999"
+            android:max="100"
+            android:progress="60"
+            android:progressDrawable="@drawable/circle_progressbar" />
+
+        <com.xq.myprogressview.view.MyLoadingView
+            android:id="@+id/myloadingview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#e6e6e6" />
+    </LinearLayout>
+</ScrollView>

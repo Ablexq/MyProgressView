@@ -37,3 +37,25 @@ clip/scale决定终点形状
 为clip 时 终点平头 ， 
 
 为scale 时 终点圆头 
+
+
+<font color="#ff0000">注意：进度为1时，可能左侧显示有问题</font>
+
+以下没问题：
+
+```
+    <ProgressBar
+        android:id="@+id/myview3"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="1"
+        android:progressDrawable="@drawable/layer_list_progress_drawable01" />
+```
+
+
+
+
+
